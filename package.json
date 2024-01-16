@@ -27,6 +27,12 @@
     "@nuxt/devtools": "^1.0.6",
     "@typescript-eslint/eslint-plugin": "^6.17.0",
     "@typescript-eslint/parser": "^6.17.0",
+    "@unocss/nuxt": "^0.58.3",
+    "@unocss/preset-rem-to-px": "^0.58.3",
+    "@unocss/transformer-directives": "^0.58.3",
+    "@unocss/transformer-variant-group": "^0.58.3",
+    "@vueuse/core": "^10.7.2",
+    "@vueuse/nuxt": "^10.7.2",
     "commitizen": "^4.3.0",
     "cz-git": "^1.8.0",
     "eslint": "^8.56.0",
@@ -37,6 +43,7 @@
     "lint-staged": "^15.2.0",
     "nuxt": "^3.9.0",
     "typescript": "^5.3.3",
+    "unocss": "^0.58.3",
     "vite-plugin-remove-console": "^2.2.0"
   },
   "dependencies": {

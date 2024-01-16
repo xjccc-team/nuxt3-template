@@ -47,8 +47,10 @@ export default defineNuxtConfig({
       publicDir: '~/node-server/'
     }
   },
+  features: {
+    inlineStyles: false
+  },
   experimental: {
-    inlineSSRStyles: false,
     treeshakeClientOnly: false
   },
   sourcemap: debug,
@@ -65,13 +67,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         less: {
-          additionalData: (content: string, loaderContext: string) => {
-            if (~loaderContext.indexOf('app.vue')) {
-              return content
-            }
-            // 注入less - @HTTPS静态资源变量
-            return `@HTTPS: ${lessHTTPS};${content}`
-          }
+          additionalData: `@HTTPS: '${lessHTTPS}';`
         }
       }
     }
@@ -83,6 +79,8 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-error-and-cache',
     'nuxt-custom-fetch',
+    '@unocss/nuxt',
+    '@vueuse/nuxt',
     [
       '@pinia/nuxt',
       {
