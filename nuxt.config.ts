@@ -1,5 +1,6 @@
 import removeConsole from 'vite-plugin-remove-console'
 import type { PluginOption } from 'vite'
+import type { NuxtAppConfig } from 'nuxt/schema'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 
 const debug = process.env.NODE_ENV === 'development'
@@ -7,17 +8,13 @@ const cdnURL = ''
 const lessHTTPS = ''
 const plugins = [] as PluginOption[]
 
-let globalScript = [] as {
-  type?: string
-  children?: string
-  src?: string
-}[]
+const globalScript: NuxtAppConfig['head']['script'] = []
 if (!debug) {
   plugins.push(removeConsole())
 }
 
 if (debug) {
-  globalScript = [
+  globalScript.push(...[
     {
       src: 'https://s.kcimg.cn/wap/js/detail/vconsole.min.js'
     },
@@ -25,7 +22,7 @@ if (debug) {
       type: 'text/javascript',
       children: 'var vConsole = new VConsole()'
     }
-  ]
+  ])
 }
 
 export default defineNuxtConfig({
