@@ -42,7 +42,7 @@
     "less": "^4.2.0",
     "lint-staged": "^15.2.2",
     "nuxt": "^3.10.3",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.2",
     "unocss": "^0.58.5",
     "vite-plugin-remove-console": "^2.2.0"
   },
