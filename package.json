@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
-    "nuxt-custom-fetch": "^1.1.6",
+    "nuxt-custom-fetch": "^1.1.7",
     "nuxt-error-and-cache": "^1.1.2",
     "pinia": "^2.1.7"
   },
