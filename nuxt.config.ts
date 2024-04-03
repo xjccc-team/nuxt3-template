@@ -24,12 +24,10 @@ if (debug) {
     }
   ])
 }
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
   typescript: {
-    shim: false,
-    strict: true
+    shim: false
   },
   app: {
     buildAssetsDir: '/client/',
