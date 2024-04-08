@@ -12,8 +12,8 @@ dependencies:
     specifier: ^0.5.1
     version: 0.5.1(typescript@5.4.3)(vue@3.4.21)
   nuxt-custom-fetch:
-    specifier: ^1.1.7
-    version: 1.1.7
+    specifier: ^2.0.2
+    version: 2.0.2
   nuxt-error-and-cache:
     specifier: ^1.1.2
     version: 1.1.2
@@ -6483,8 +6483,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /nuxt-custom-fetch@1.1.7:
-    resolution: {integrity: sha512-onD34szZ5o1jQwh/p7BFs3vJ/4BlxtGoIGkhti/qriPZTGoN9eAciwjy6v3RQW07V4/+qTwxQQSa52W9VsmzmA==}
+  /nuxt-custom-fetch@2.0.2:
+    resolution: {integrity: sha512-roSYK3M2S+gI3kjPrba+0P+wfV3R+m7p33lKG3FeW9tEZtwyic9JKBtZ8P8NuTlN/4QtPTzRV53Yo30Lr6Fu7w==}
     dependencies:
       '@nuxt/kit': 3.11.1
       typescript: 5.4.3
