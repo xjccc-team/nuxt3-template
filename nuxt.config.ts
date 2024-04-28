@@ -82,6 +82,7 @@ export default defineNuxtConfig({
         disableVuex: true,
         autoImports: ['defineStore', ['defineStore', 'definePiniaStore']]
       }
-    ]
+    ],
+    "@nuxt/eslint"
   ]
 })
