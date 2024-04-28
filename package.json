@@ -12,6 +12,7 @@
     "echo:husky": "echo 'npm run lint' > .husky/pre-commit && echo 'npx --no-install commitlint --edit \"$1\"' > .husky/commit-msg",
     "commit": "git-cz",
     "lint": "eslint .",
+    "lint:style": "stylelint '**/*.{vue,css,less}'",
     "depoly:test": "pnpm build:test && pm2 start ./pm2.config.js --env test",
     "deploy": "pnpm build && pm2 start ./pm2.config.js",
     "prepare": "husky"
@@ -43,6 +44,10 @@
     "less": "^4.2.0",
     "lint-staged": "^15.2.2",
     "nuxt": "^3.11.2",
+    "postcss-html": "^1.6.0",
+    "stylelint": "^16.4.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^36.0.0",
     "typescript": "^5.4.5",
     "unocss": "^0.59.4",
     "vite-plugin-remove-console": "^2.2.0"

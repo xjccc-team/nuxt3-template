@@ -54,6 +54,7 @@ export default defineNuxtConfig({
   runtimeConfig: {},
   css: ['~/css/reset.css'],
   vite: {
+    vue: {},
     build: {
       cssTarget: 'chrome61',
       target: 'es2015'
