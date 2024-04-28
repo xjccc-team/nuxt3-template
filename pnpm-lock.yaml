@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  ofetch: 1.3.4
+  ofetch: 1.2.1
 
 dependencies:
   '@pinia/nuxt':
@@ -28,9 +28,6 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^19.2.2
     version: 19.2.2
-  '@eslint/eslintrc':
-    specifier: ^3.0.2
-    version: 3.0.2
   '@nuxt/devtools':
     specifier: ^1.2.0
     version: 1.2.0(@unocss/reset@0.59.4)(floating-vue@5.2.2)(nuxt@3.11.2)(unocss@0.59.4)(vite@5.2.8)(vue@3.4.21)
@@ -64,6 +61,9 @@ devDependencies:
   eslint:
     specifier: ^9.1.1
     version: 9.1.1
+  eslint-plugin-vue:
+    specifier: ^9.25.0
+    version: 9.25.0(eslint@9.1.1)
   husky:
     specifier: ^9.0.11
     version: 9.0.11
@@ -1581,7 +1581,7 @@ packages:
       jiti: 1.21.0
       mri: 1.2.0
       nanoid: 4.0.2
-      ofetch: 1.3.4
+      ofetch: 1.2.1
       parse-git-config: 3.0.0
       pathe: 1.1.2
       rc9: 2.1.1
@@ -2728,7 +2728,7 @@ packages:
     dependencies:
       '@iconify/utils': 2.1.23
       '@unocss/core': 0.59.4
-      ofetch: 1.3.4
+      ofetch: 1.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2773,7 +2773,7 @@ packages:
     resolution: {integrity: sha512-ehutTjKHnf2KPmdatN42N9a8+y+glKSU3UlcBRNsVIIXVIlaBQuPVGZSPhnMtrKD17IgWylXq2K6RJK+ab0hZA==}
     dependencies:
       '@unocss/core': 0.59.4
-      ofetch: 1.3.4
+      ofetch: 1.2.1
     dev: true
 
   /@unocss/preset-wind@0.59.4:
@@ -6696,7 +6696,7 @@ packages:
       mlly: 1.6.1
       mri: 1.2.0
       node-fetch-native: 1.6.4
-      ofetch: 1.3.4
+      ofetch: 1.2.1
       ohash: 1.1.3
       openapi-typescript: 6.7.5
       pathe: 1.1.2
@@ -7000,7 +7000,7 @@ packages:
       nitropack: 2.9.6
       nuxi: 3.11.1
       nypm: 0.3.8
-      ofetch: 1.3.4
+      ofetch: 1.2.1
       ohash: 1.1.3
       pathe: 1.1.2
       perfect-debounce: 1.0.0
@@ -7095,8 +7095,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ofetch@1.3.4:
-    resolution: {integrity: sha512-KLIET85ik3vhEfS+3fDlc/BAZiAp+43QEC/yCo5zkNoY2YaKvNkOaFr/6wCFgFH1kuYQM5pMNi0Tg8koiIemtw==}
+  /ofetch@1.2.1:
+    resolution: {integrity: sha512-WEX1TEfGuAFJhzRW6Qv9RcxCyek+YogEeXlCWl1XoqBSW2fc6jU4LTk3VotwC1YfXv8Uz06LSofU6uW/ZIT+6g==}
     dependencies:
       destr: 2.0.3
       node-fetch-native: 1.6.4
@@ -8980,7 +8980,7 @@ packages:
       lru-cache: 10.2.0
       mri: 1.2.0
       node-fetch-native: 1.6.4
-      ofetch: 1.3.4
+      ofetch: 1.2.1
       ufo: 1.5.3
     transitivePeerDependencies:
       - uWebSockets.js

@@ -1,5 +1,6 @@
 {
   "name": "nuxt-app",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -7,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "husky init & nuxt prepare",
+    "postinstall": "husky init & nuxt prepare && pnpm echo:husky",
+    "echo:husky": "echo 'npm run lint' > .husky/pre-commit && echo 'npx --no-install commitlint --edit \"$1\"' > .husky/commit-msg",
     "commit": "git-cz",
     "lint": "eslint .",
     "depoly:test": "pnpm build:test && pm2 start ./pm2.config.js --env test",
@@ -25,7 +27,6 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@eslint/eslintrc": "^3.0.2",
     "@nuxt/devtools": "^1.2.0",
     "@nuxt/eslint": "^0.3.10",
     "@unocss/nuxt": "^0.59.4",
@@ -37,6 +38,7 @@
     "commitizen": "^4.3.0",
     "cz-git": "^1.9.1",
     "eslint": "^9.1.1",
+    "eslint-plugin-vue": "^9.25.0",
     "husky": "^9.0.11",
     "less": "^4.2.0",
     "lint-staged": "^15.2.2",
