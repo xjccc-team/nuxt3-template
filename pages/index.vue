@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="container"
-    :name="1"
-  >
+  <div class="container">
     首页
   </div>
 </template>
