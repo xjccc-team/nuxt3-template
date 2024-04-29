@@ -23,8 +23,7 @@
     }
   },
   "lint-staged": {
-    "**/*.{ts,vue}": "eslint . --fix",
-    ".": "prettier . --write"
+    "**/*.{ts,vue}": "eslint . --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
