@@ -1,1 +1,9 @@
-{ "extends": ["stylelint-config-standard", "stylelint-config-recommended-vue"] }
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-html", "stylelint-config-recommended", "stylelint-prettier/recommended", "stylelint-config-prettier"],
+  "rules": {
+    "no-empty-source": null,
+    "selector-pseudo-element-no-unknown": [true, {
+      "ignorePseudoElements": ["v-deep"]
+    }]
+  }
+}
