@@ -1,8 +1,10 @@
 import withNuxt from './.nuxt/eslint.config.mjs'
 import pluginVue from 'eslint-plugin-vue'
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 
 export default withNuxt([
   ...pluginVue.configs['flat/recommended'],
+  eslintPluginPrettierRecommended,
   {
     files: ['**/*.ts', '**/*.vue'],
     rules: {
@@ -25,10 +27,7 @@ export default withNuxt([
       'vue/valid-v-for': 0,
       'max-len': 0,
       'no-empty-function': 0,
-      'object-property-newline': [
-        'error',
-        { allowAllPropertiesOnSameLine: true }
-      ]
+      'object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }]
     }
   }
 ])

@@ -1,9 +1,10 @@
 <template>
-  <div class="container">
+  <div
+    class="container"
+    :name="1"
+  >
     hello-world
   </div>
 </template>
-<script setup lang="ts">
-</script>
-<style lang="less" scoped>
-</style>
+<script setup lang="ts"></script>
+<style lang="less" scoped></style>

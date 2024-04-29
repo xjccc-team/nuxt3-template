@@ -16,27 +16,25 @@ form {
   padding: 0;
   font-size: 16px;
   font-weight: 400;
-  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
+
 html,
 body {
   height: 100%;
   width: 100%;
+
   /* overflow: hidden; */
 }
 
 html {
-  font-family: "PingFangSC", "Microsoft YaHei", "Helvetica", "Arial", sans-serif;
-  -webkit-text-size-adjust: none;
+  font-family: PingFangSC, 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+  text-size-adjust: none;
   word-break: break-all;
 }
 
 body {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-
-a:focus {
-  outline: none;
+  -webkit-tap-highlight-color: rgb(255 255 255 / 0%);
 }
 
 body,
@@ -46,11 +44,12 @@ input {
   padding: 0;
   border: none;
   outline: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
 }
 
 input {
-  -webkit-writing-mode: horizontal-tb !important;
+  writing-mode: horizontal-tb !important;
+  user-select: text !important;
 }
 
 button {
@@ -67,30 +66,6 @@ i {
   font-style: normal;
 }
 
-a img {
-  border: 0 none;
-}
-a {
-  display: block;
-}
-a,
-a:link {
-  color: inherit;
-  text-decoration: none;
-}
-a:active {
-  color: inherit;
-  text-decoration: none;
-}
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-a:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
 img {
   width: 100%;
   height: 100%;
@@ -98,40 +73,62 @@ img {
   object-fit: cover;
 }
 
-input:focus::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0);
+a img {
+  border: 0 none;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: rgba(3, 16, 42, 0.2);
+a {
+  display: block;
 }
 
-input:focus:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0);
+a,
+a:link {
+  color: inherit;
+  text-decoration: none;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: rgba(23, 24, 26, 0.4);
+a:focus {
+  outline: none;
 }
 
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="number"],
-input[type="date"],
-input[type="password"],
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(3 16 42 / 20%);
+}
+
+input:focus::placeholder {
+  color: rgb(255 255 255 / 0%);
+}
+
+input[type='search'],
+input[type='text'],
+input[type='tel'],
+input[type='number'],
+input[type='date'],
+input[type='password'],
 button,
 select,
 textarea,
-input[type="submit"] {
-  -webkit-appearance: none;
-  -webkit-border-image: none;
-  border-image: none;
-  -webkit-border-radius: 0;
-  border-radius: 0;
+input[type='submit'] {
+  appearance: none;
   border: 0 none;
+  border-image: none;
+  border-radius: 0;
   outline: none;
   box-sizing: border-box;
 }
@@ -139,10 +136,6 @@ input[type="submit"] {
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
   display: none;
-}
-
-input {
-  -webkit-user-select: text !important;
 }
 
 table {
@@ -156,8 +149,8 @@ td {
   font-weight: 400;
 }
 
-.clearfix:after {
-  content: ".";
+.clearfix::after {
+  content: '.';
   display: block;
   visibility: hidden;
   clear: both;

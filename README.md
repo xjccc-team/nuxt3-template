@@ -14,6 +14,15 @@ echo "npm run lint" > .husky/pre-commit
 echo 'npx --no-install commitlint --edit "$1"' > .husky/commit-msg
 ```
 
+`.vscode`配置，可以配合vscode插件 - `stylelint`
+
+执行lint
+
+```bash
+pnpm lint
+pnpm lint:style
+pnpm lint --fix
+```
 
 # Nuxt 3 Minimal Starter
 

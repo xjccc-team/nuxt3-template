@@ -6,8 +6,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
-  title: 'layout page'
-})
+  useHead({
+    title: 'layout page'
+  })
 </script>
 <style lang="less" scoped></style>
