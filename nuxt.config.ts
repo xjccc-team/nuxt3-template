@@ -14,7 +14,7 @@ if (!debug) {
 }
 
 if (debug) {
-  globalScript.push(...[
+  globalScript.push(
     {
       src: 'https://s.kcimg.cn/wap/js/detail/vconsole.min.js'
     },
@@ -22,7 +22,7 @@ if (debug) {
       type: 'text/javascript',
       children: 'var vConsole = new VConsole()'
     }
-  ])
+  )
 }
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -49,8 +49,7 @@ export default defineNuxtConfig({
     treeshakeClientOnly: false
   },
   sourcemap: debug,
-  build: {
-  },
+  build: {},
   runtimeConfig: {},
   css: ['~/css/reset.css'],
   vite: {
@@ -84,6 +83,6 @@ export default defineNuxtConfig({
         autoImports: ['defineStore', ['defineStore', 'definePiniaStore']]
       }
     ],
-    "@nuxt/eslint"
+    '@nuxt/eslint'
   ]
 })

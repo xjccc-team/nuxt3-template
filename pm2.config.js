@@ -8,13 +8,13 @@ module.exports = {
       output: './pm2-log/nitro-back-out.log',
       error: './pm2-log/nitro-back-error.log',
       env: {
-        'PORT': 8099,
-        'HOST': '0.0.0.0'
+        PORT: 8099,
+        HOST: '0.0.0.0'
       },
       env_test: {
-        'PORT': 8099,
-        'HOST': '0.0.0.0',
-        'MODE': 'dev'
+        PORT: 8099,
+        HOST: '0.0.0.0',
+        MODE: 'dev'
       }
     }
   ]

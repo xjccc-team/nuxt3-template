@@ -28,7 +28,7 @@ body {
 }
 
 html {
-  font-family: PingFangSC, "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  font-family: PingFangSC, 'Microsoft YaHei', Helvetica, Arial, sans-serif;
   text-size-adjust: none;
   word-break: break-all;
 }
@@ -115,16 +115,16 @@ input:focus::placeholder {
   color: rgb(255 255 255 / 0%);
 }
 
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="number"],
-input[type="date"],
-input[type="password"],
+input[type='search'],
+input[type='text'],
+input[type='tel'],
+input[type='number'],
+input[type='date'],
+input[type='password'],
 button,
 select,
 textarea,
-input[type="submit"] {
+input[type='submit'] {
   appearance: none;
   border: 0 none;
   border-image: none;
@@ -150,7 +150,7 @@ td {
 }
 
 .clearfix::after {
-  content: ".";
+  content: '.';
   display: block;
   visibility: hidden;
   clear: both;

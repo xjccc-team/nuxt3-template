@@ -14,7 +14,6 @@ echo "npm run lint" > .husky/pre-commit
 echo 'npx --no-install commitlint --edit "$1"' > .husky/commit-msg
 ```
 
-
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.

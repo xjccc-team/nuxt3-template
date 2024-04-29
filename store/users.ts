@@ -5,4 +5,4 @@ export const useUserStore = defineStore('users', () => {
     users,
     getUserInfo
   }
-}) 
+})

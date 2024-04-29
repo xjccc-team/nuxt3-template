@@ -7,7 +7,7 @@
   </div>
 </template>
 <script setup lang="ts">
-  const a = ref(0);
+  const a = ref(0)
 </script>
 <style lang="less" scoped>
   .ccss {
@@ -22,7 +22,7 @@
   }
 
   .a {
-    color: red
+    color: red;
   }
 
   text * {

@@ -14,13 +14,9 @@ export default defineConfig({
     presetRemToPx()
   ],
   transformers: [transformerVariantGroup(), transformerDirectives()],
-  variants: [
-    
-  ],
+  variants: [],
   theme: {
-    breakpoints: {
-     
-    },
+    breakpoints: {},
     colors: {
       blue: '#0089ff',
       orange: '#ff6600',
@@ -29,11 +25,10 @@ export default defineConfig({
       success: '#09bb07',
       warning: '#ffbe00',
       error: '#f44336',
-      processing: '#4ca4fe',
+      processing: '#4ca4fe'
     }
   },
-  shortcuts: [
-  ],
+  shortcuts: [],
   rules: [
     [
       /text-line-(\d+)/,
