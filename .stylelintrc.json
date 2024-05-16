@@ -1,9 +1,0 @@
-{
-  "extends": ["stylelint-config-standard", "stylelint-config-recommended", "stylelint-config-recommended-vue"],
-  "rules": {
-    "no-empty-source": null,
-    "selector-pseudo-element-no-unknown": [true, {
-      "ignorePseudoElements": ["v-deep"]
-    }]
-  }
-}

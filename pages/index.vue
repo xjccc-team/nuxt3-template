@@ -20,7 +20,6 @@
   .a::v-deep {
     color: yellow;
   }
-
   .a {
     color: red;
   }
