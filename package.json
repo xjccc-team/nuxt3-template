@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "husky init & nuxt prepare && pnpm echo:husky",
-    "echo:husky": "echo 'npm run lint' > .husky/pre-commit && echo 'npx --no-install commitlint --edit \"$1\"' > .husky/commit-msg",
+    "echo:husky": "echo 'npx lint-staged' > .husky/pre-commit && echo 'npx --no-install commitlint --edit \"$1\"' > .husky/commit-msg",
     "commit": "git-cz",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
