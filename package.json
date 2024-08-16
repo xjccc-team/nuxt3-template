@@ -39,7 +39,7 @@
     "@unocss/preset-rem-to-px": "^0.62.1",
     "@unocss/transformer-directives": "^0.62.1",
     "@unocss/transformer-variant-group": "^0.62.1",
-    "@vueuse/core": "^10.11.1",
+    "@vueuse/core": "^11.0.0",
     "@vueuse/nuxt": "^11.0.0",
     "commitizen": "^4.3.0",
     "cz-git": "^1.9.4",
