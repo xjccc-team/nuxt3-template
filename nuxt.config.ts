@@ -5,7 +5,7 @@ import type { NuxtAppConfig } from 'nuxt/schema'
 
 const debug = process.env.NODE_ENV === 'development'
 const cdnURL = ''
-const lessHTTPS = ''
+const STATIC = ''
 const plugins = [] as PluginOption[]
 
 const globalScript: NuxtAppConfig['head']['script'] = []
@@ -13,22 +13,8 @@ if (!debug) {
   plugins.push(removeConsole())
 }
 
-if (debug) {
-  globalScript.push(
-    {
-      src: 'https://s.kcimg.cn/wap/js/detail/vconsole.min.js'
-    },
-    {
-      type: 'text/javascript',
-      children: 'var vConsole = new VConsole()'
-    }
-  )
-}
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  typescript: {
-    shim: false
-  },
   app: {
     buildAssetsDir: '/client/',
     cdnURL,
@@ -38,8 +24,8 @@ export default defineNuxtConfig({
   },
   nitro: {
     output: {
-      dir: '~/node-server',
-      publicDir: '~/node-server/'
+      dir: 'node-server',
+      publicDir: 'node-server'
     }
   },
   features: {
@@ -62,7 +48,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         less: {
-          additionalData: `@HTTPS: '${lessHTTPS}';`
+          additionalData: `@STATIC: '${STATIC}';`
         }
       }
     }
@@ -79,7 +65,6 @@ export default defineNuxtConfig({
     [
       '@pinia/nuxt',
       {
-        disableVuex: true,
         autoImports: ['defineStore', ['defineStore', 'definePiniaStore']]
       }
     ],

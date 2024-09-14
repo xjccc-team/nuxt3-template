@@ -17,7 +17,7 @@
     top: calc(1px + 2px);
   }
 
-  .a::v-deep {
+  :deep(.a) {
     color: yellow;
   }
   .a {
