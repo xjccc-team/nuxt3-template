@@ -1,8 +1,6 @@
 // uno.config.ts
-import { defineConfig, presetAttributify, presetUno } from 'unocss'
+import { defineConfig, presetAttributify, presetUno, transformerVariantGroup, transformerDirectives } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
-import transformerVariantGroup from '@unocss/transformer-variant-group'
-import transformerDirectives from '@unocss/transformer-directives'
 
 export default defineConfig({
   presets: [

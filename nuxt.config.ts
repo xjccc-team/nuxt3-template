@@ -15,6 +15,7 @@ if (!debug) {
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   app: {
     buildAssetsDir: '/client/',
     cdnURL,
@@ -22,22 +23,27 @@ export default defineNuxtConfig({
       script: globalScript
     }
   },
+
   nitro: {
     output: {
       dir: 'node-server',
       publicDir: 'node-server'
     }
   },
+
   features: {
     inlineStyles: false
   },
+
   experimental: {
     treeshakeClientOnly: false
   },
+
   sourcemap: debug,
   build: {},
   runtimeConfig: {},
   css: ['~/css/reset.css'],
+
   vite: {
     vue: {},
     build: {
@@ -53,10 +59,13 @@ export default defineNuxtConfig({
       }
     }
   },
+
   ignore: [],
+
   hooks: {
     // 'pages:extend' (routes) {}
   },
+
   modules: [
     'nuxt-error-and-cache',
     'nuxt-custom-fetch',
@@ -69,5 +78,7 @@ export default defineNuxtConfig({
       }
     ],
     '@nuxt/eslint'
-  ]
+  ],
+
+  compatibilityDate: '2024-12-31'
 })

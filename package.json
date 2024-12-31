@@ -2,20 +2,20 @@
   "name": "nuxt-app",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "husky init & nuxt prepare && pnpm echo:husky",
+    "prepare": "husky && pnpm echo:husky",
     "echo:husky": "echo 'npx lint-staged' > .husky/pre-commit && echo 'npx --no-install commitlint --edit \"$1\"' > .husky/commit-msg",
     "commit": "git-cz",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "depoly:test": "pnpm build:test && pm2 start ./pm2.config.js --env test",
-    "deploy": "pnpm build && pm2 start ./pm2.config.js",
-    "prepare": "husky"
+    "deploy": "pnpm build && pm2 start ./pm2.config.js"
   },
   "config": {
     "commitizen": {
@@ -37,8 +37,6 @@
     "@nuxt/eslint": "^0.7.4",
     "@unocss/nuxt": "^0.65.3",
     "@unocss/preset-rem-to-px": "^0.65.3",
-    "@unocss/transformer-directives": "^0.65.3",
-    "@unocss/transformer-variant-group": "^0.65.3",
     "@vueuse/core": "^12.2.0",
     "@vueuse/nuxt": "^12.2.0",
     "commitizen": "^4.3.1",
