@@ -33,7 +33,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
-    "@nuxt/devtools": "^1.7.0",
+    "@nuxt/devtools": "^2.0.0",
     "@nuxt/eslint": "^1.0.0",
     "@unocss/nuxt": "^65.4.3",
     "@unocss/preset-rem-to-px": "^65.4.3",
