@@ -1,9 +1,7 @@
 import withNuxt from './.nuxt/eslint.config.mjs'
-import pluginVue from 'eslint-plugin-vue'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 
 export default withNuxt([
-  ...pluginVue.configs['flat/recommended'],
   eslintPluginPrettierRecommended,
   {
     files: ['**/*.ts', '**/*.vue'],
