@@ -16,6 +16,10 @@ if (!debug) {
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  future: {
+    compatibilityVersion: 4
+  },
+
   app: {
     buildAssetsDir: '/client/',
     cdnURL,

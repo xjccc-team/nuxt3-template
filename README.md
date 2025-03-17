@@ -1,28 +1,6 @@
-# 注意
+# Migrate to Nuxt 4
 
-husky 需要有 `.git`
-
-创建`pre-commit`
-
-```bash
-echo "npm run lint" > .husky/pre-commit
-```
-
-创建commit-msg
-
-```bash
-echo 'npx --no-install commitlint --edit "$1"' > .husky/commit-msg
-```
-
-`.vscode`配置，可以配合vscode插件 - `stylelint`
-
-执行lint
-
-```bash
-pnpm lint
-pnpm lint:style
-pnpm lint --fix
-```
+[Upgrade Guide]https://nuxt.com/docs/getting-started/upgrade#new-directory-structure
 
 # Nuxt 3 Minimal Starter
 
