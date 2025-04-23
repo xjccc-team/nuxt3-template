@@ -9,7 +9,7 @@
 <script setup lang="ts">
   const a = ref(0)
 </script>
-<style lang="less" scoped>
+<style scoped>
   .ccss {
     color: red;
   }
@@ -29,6 +29,6 @@
   }
 
   .bg {
-    background-color: url('https://img.alicdn.com/tfs/TB1.rjJQFXXXXXKXpXXXXXXXXXX-200-200.png');
+    --uno: 'bg-[url(theme(STATIC)/tfs/TB1.rjJQFXXXXXKXpXXXXXXXXXX-200-200.png)]';
   }
 </style>

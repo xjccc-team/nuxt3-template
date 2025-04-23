@@ -5,7 +5,6 @@ import type { NuxtAppConfig } from 'nuxt/schema'
 
 const debug = process.env.NODE_ENV === 'development'
 const cdnURL = ''
-const STATIC = ''
 const plugins = [] as PluginOption[]
 
 const globalScript: NuxtAppConfig['head']['script'] = []
@@ -39,10 +38,6 @@ export default defineNuxtConfig({
     inlineStyles: false
   },
 
-  experimental: {
-    treeshakeClientOnly: false
-  },
-
   sourcemap: debug,
   build: {},
   runtimeConfig: {},
@@ -54,14 +49,7 @@ export default defineNuxtConfig({
       cssTarget: 'chrome61',
       target: 'es2015'
     },
-    plugins,
-    css: {
-      preprocessorOptions: {
-        less: {
-          additionalData: `@STATIC: '${STATIC}';`
-        }
-      }
-    }
+    plugins
   },
 
   ignore: [],

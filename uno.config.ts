@@ -1,6 +1,8 @@
 // uno.config.ts
-import { defineConfig, presetAttributify, presetUno, transformerVariantGroup, transformerDirectives } from 'unocss'
+import { defineConfig, presetAttributify, transformerVariantGroup, transformerDirectives, presetWind4 } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
+
+const STATIC = ''
 
 export default defineConfig({
   presets: [
@@ -8,12 +10,13 @@ export default defineConfig({
       /* preset options */
       ignoreAttributes: [':src']
     }),
-    presetUno(),
-    presetRemToPx()
+    presetRemToPx(),
+    presetWind4()
   ],
   transformers: [transformerVariantGroup(), transformerDirectives()],
   variants: [],
   theme: {
+    STATIC,
     breakpoints: {},
     colors: {
       blue: '#0089ff',
@@ -32,10 +35,10 @@ export default defineConfig({
       /text-line-(\d+)/,
       ([, d]) => {
         return {
-          display: '-webkit-box', // 需要设置为 -webkit-box 以使用 -webkit-line-clamp
-          '-webkit-box-orient': 'vertical', // 设置方向为垂直
-          overflow: 'hidden', // 隐藏超出容器的文本
-          '-webkit-line-clamp': d // 限制在3行文本
+          display: '-webkit-box',
+          '-webkit-box-orient': 'vertical',
+          overflow: 'hidden',
+          '-webkit-line-clamp': d
         }
       }
     ],
@@ -43,9 +46,9 @@ export default defineConfig({
       /text-line-1/,
       () => {
         return {
-          'white-space': 'nowrap', // 确保文本不会换行
-          overflow: 'hidden', // 隐藏超出容器的文本
-          'text-overflow': 'ellipsis' // 使用省略号表示文本被截断
+          'white-space': 'nowrap',
+          overflow: 'hidden',
+          'text-overflow': 'ellipsis'
         }
       }
     ]
