@@ -1,8 +1,8 @@
 // uno.config.ts
-import { defineConfig, presetAttributify, transformerVariantGroup, transformerDirectives, presetWind4 } from 'unocss'
+import { defineConfig, presetAttributify, transformerVariantGroup, transformerDirectives, presetWind3 } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
 
-const STATIC = ''
+const STATIC = 'https://example.com/static'
 
 export default defineConfig({
   presets: [
@@ -11,7 +11,7 @@ export default defineConfig({
       ignoreAttributes: [':src']
     }),
     presetRemToPx(),
-    presetWind4()
+    presetWind3()
   ],
   transformers: [transformerVariantGroup(), transformerDirectives()],
   variants: [],
@@ -21,7 +21,7 @@ export default defineConfig({
     colors: {
       blue: '#0089ff',
       orange: '#ff6600',
-      black: '#1f2429', // rgba(31, 36, 41, 1)
+      // black: '#1f2429', // rgba(31, 36, 41, 1)
       grey: 'rgba(31, 36, 41, 0.6)',
       success: '#09bb07',
       warning: '#ffbe00',
@@ -31,6 +31,14 @@ export default defineConfig({
   },
   shortcuts: [],
   rules: [
+    [
+      /^black(?:-(0(\.\d+)?)?)/,
+      ([, d = '1']) => {
+        return {
+          color: `rgba(31, 36, 41, ${parseFloat(d)})`
+        }
+      }
+    ],
     [
       /text-line-(\d+)/,
       ([, d]) => {
