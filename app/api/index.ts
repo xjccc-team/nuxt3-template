@@ -1,6 +1,4 @@
-import { DEBUG } from '~~/composables/env'
 import type { FetchOptions } from 'ofetch'
-console.log(DEBUG)
 
 const ajax = new CustomFetch({
   baseURL: ''
