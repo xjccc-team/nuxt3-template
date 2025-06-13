@@ -36,8 +36,8 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@nuxt/devtools": "^2.5.0",
     "@nuxt/eslint": "^1.4.1",
-    "@unocss/nuxt": "66.1.4",
-    "@unocss/preset-rem-to-px": "66.1.4",
+    "@unocss/nuxt": "66.2.0",
+    "@unocss/preset-rem-to-px": "66.2.0",
     "@vueuse/core": "^13.3.0",
     "@vueuse/nuxt": "^13.3.0",
     "commitizen": "^4.3.1",
@@ -51,7 +51,7 @@
     "nuxt": "^3.17.5",
     "prettier": "^3.5.3",
     "typescript": "5.8.3",
-    "unocss": "66.1.4",
+    "unocss": "66.2.0",
     "vite-plugin-remove-console": "^2.2.0"
   },
   "dependencies": {
