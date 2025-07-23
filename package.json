@@ -29,7 +29,10 @@
     }
   },
   "lint-staged": {
-    "**/*.{ts,vue}": "oxlint --deny-warnings && eslint --fix"
+    "**/*.{ts,vue}": [
+      "oxlint --deny-warnings --fix",
+      "eslint --fix"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
