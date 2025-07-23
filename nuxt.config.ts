@@ -15,10 +15,6 @@ if (!debug) {
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  future: {
-    compatibilityVersion: 4
-  },
-
   app: {
     buildAssetsDir: '/client/',
     cdnURL,
@@ -44,11 +40,6 @@ export default defineNuxtConfig({
   css: ['~/css/reset.css'],
 
   vite: {
-    vue: {},
-    build: {
-      cssTarget: 'chrome61',
-      target: 'es2015'
-    },
     plugins
   },
 
@@ -59,7 +50,6 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    'nuxt-error-and-cache',
     'nuxt-custom-fetch',
     '@unocss/nuxt',
     '@vueuse/nuxt',
@@ -72,5 +62,5 @@ export default defineNuxtConfig({
     '@nuxt/eslint'
   ],
 
-  compatibilityDate: '2024-12-31'
+  compatibilityDate: '2025-07-23'
 })

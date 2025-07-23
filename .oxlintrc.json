@@ -1,0 +1,38 @@
+{
+  "plugins": ["typescript"],
+  "rules": {
+    // 基础 JavaScript 规则
+    "no-var": "error",
+    "no-void": "error",
+    "radix": "error",
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
+    "no-restricted-globals": ["error", "isFinite", "isNaN"],
+    "no-return-assign": "error",
+
+    // 函数相关
+    "prefer-rest-params": "error",
+    "max-params": ["error", 3],
+    "max-nested-callbacks": ["error", 3],
+
+    // 代码风格和质量
+    "no-else-return": "error",
+    "max-depth": ["error", 5],
+    "prefer-object-spread": "error",
+    "prefer-object-has-own": "error",
+    "prefer-promise-reject-errors": "error",
+
+    // TypeScript 相关
+    "typescript/no-require-imports": "error",
+    "typescript/no-non-null-asserted-nullish-coalescing": "error",
+    "typescript/adjacent-overload-signatures": "error",
+    "typescript/consistent-type-definitions": ["error", "interface"],
+    "typescript/no-empty-interface": "error",
+    "typescript/no-inferrable-types": "error",
+    "typescript/prefer-for-of": "error",
+    "typescript/prefer-function-type": "error",
+    "typescript/prefer-namespace-keyword": "error"
+  },
+  "globals": {
+  },
+  "ignorePatterns": []
+}
