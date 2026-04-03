@@ -11,7 +11,7 @@
     "preview": "nuxt preview",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky && pnpm echo:husky",
-    "echo:husky": "echo 'npx lint-staged' > .husky/pre-commit && echo 'npx --no-install commitlint --edit \"$1\"' > .husky/commit-msg",
+    "echo:husky": "echo 'npx --no-install nano-staged' > .husky/pre-commit && echo 'npx --no-install commitlint --edit \"$1\"' > .husky/commit-msg",
     "commit": "git-cz",
     "lint": "oxlint --deny-warnings && eslint .",
     "lint:fix": "oxlint --fix && eslint . --fix",
@@ -25,10 +25,10 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "nano-staged"
     }
   },
-  "lint-staged": {
+  "nano-staged": {
     "**/*.{ts,vue}": [
       "oxlint --deny-warnings --fix",
       "eslint --fix"
@@ -50,7 +50,7 @@
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-vue": "^10.8.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.3.2",
+    "nano-staged": "^0.9.0",
     "nuxt": "^4.3.1",
     "oxlint": "^1.51.0",
     "prettier": "^3.8.1",
